@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+% block body %}
+{{movie.name}}
+{{movie.desc}}
+{{movie.year}}
+<a href="{% url 'movieapp:update' movie.id %}">update</a>
+% endblock %}
